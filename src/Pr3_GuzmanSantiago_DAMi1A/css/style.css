@@ -6,8 +6,26 @@
   --brown: ##8A8070;
 }
 
+html {
+  font-size: 62.5%;
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
 body {
-  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 1.8rem;
+  margin: auto;
+  color: var(--black);
+  margin: 0;
+  background-color: var(--white);
+}
+
+main {
+  display: block;
+  margin-top: 1em;
 }
 
 h1,
@@ -16,19 +34,91 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
+  line-height: 1.1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
 }
 
-nav {
-  height: 100%;
-  width: 200px;
-  background-color: #fff;
-  position: fixed;
-  z-index: 1;
-  overflow: auto
+h1 {
+  font-size: 2.35em;
 }
 
-a{
-  padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0
+h2 {
+  font-size: 2.00em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  margin-bottom: 1rem;
+}
+header nav{
+  position: sticky;
+  top: 0;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 1em;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+  border-top: 0.1em solid var(--black);
+  border-bottom: 0.1em solid var(--black);
+}
+
+ul li {
+  display: inline;
+  margin-bottom: 0.4em;
+  padding: 1em;
+  
+}
+
+li a {
+  color: var(--black);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+li a:hover {
+  color: var(--green);
 }
