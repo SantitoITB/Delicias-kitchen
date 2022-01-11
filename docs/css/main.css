@@ -1,4 +1,4 @@
-@import "style.css";
+@import "./style.css";
 
 header, ul {
     text-align: center;
@@ -6,6 +6,14 @@ header, ul {
 
 header, img {
     margin: 1rem;
+}
+
+a{
+    text-transform: uppercase;
+}
+
+img{
+    flex-wrap: wrap
 }
 
 ul {
@@ -16,8 +24,8 @@ ul {
     margin-bottom: 2.5rem;
     overflow: hidden;
     background-color: var(--white);
-    border-top: 0.1em solid var(--black);
-    border-bottom: 0.1em solid var(--black);
+    border-top: 0.1em solid var(--grey);
+    border-bottom: 0.1em solid var(--grey);
 }
 
 ul li {
@@ -25,11 +33,58 @@ ul li {
 }
 
 li a {
-    text-transform: uppercase;
     display: block;
     color: var(--black);
     text-align: center;
     margin-bottom: 0.4em;
     padding: 1rem;
     text-decoration: none;
+}
+
+main::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+aside{
+    width: 25%;
+    text-align: center;
+}
+
+section {
+    width: 30%;
+}
+
+aside, section {
+    float: left;
+    padding: 1rem;
+}
+
+aside p {
+    color: var(--darkgrey);
+}
+
+aside article {
+    background-color: var(--grey);
+    padding: 0.05rem;
+}
+
+article span {
+    font-size: 1em;
+    font-weight: bold;
+    background-color: var(--green);
+    padding: 0 38% 1% 38%;
+    margin: none;
+}
+
+footer{
+    padding: 2em;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+footer a{
+    margin: 1em;
 }

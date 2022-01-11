@@ -1,9 +1,11 @@
 :root {
+  /* Color palette */
   --black: #000000;
   --white: #eae6e5;
-  --grey: #88a0a8;
+  --grey: #d5d0d1;
+  --darkgrey: #546a76;
   --green: #7aba96;
-  --brown: ##8A8070;
+  --brown: #8A8070;
 }
 
 html {
@@ -15,10 +17,10 @@ html {
 
 body {
   font-size: 1.8rem;
-  margin: auto;
   color: var(--black);
   margin: 0;
   background-color: var(--white);
+  
 }
 
 @media (max-width: 684px) {
@@ -32,6 +34,10 @@ body {
 main {
   display: block;
   margin-top: 1em;
+  padding: 13px;
+  max-width: 78em;
+  margin: auto;
+  line-height: 1.618;
 }
 
 h1,
