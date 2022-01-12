@@ -56,6 +56,38 @@ section {
     width: 30%;
 }
 
+section::after {
+    content: "";
+  display: table;
+  clear: both;
+}
+
+section article {
+    float: left;
+    padding: 1rem;
+    margin: 0.8em;
+}
+section article h6, section article div{
+    text-align: center;
+}
+
+section article div {
+    margin: 0.8em;
+    border-top: 0.1em solid var(--green);
+    border-bottom: 0.1em solid var(--green);
+}
+
+section article p {
+    font-size: 0.8em;
+    margin: 0.8em;
+}
+
+section article figure {
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
 aside, section {
     float: left;
     padding: 1rem;
@@ -68,15 +100,18 @@ aside p {
 aside article {
     background-color: var(--grey);
     padding: 0.05rem;
+    margin: 0;
 }
 
-article span {
+aside article div {
+    background-color: var(--green);
+}
+
+aside article div span {
     font-size: 1em;
     font-weight: bold;
-    background-color: var(--green);
-    padding: 0 38% 1% 38%;
-    margin: none;
 }
+
 
 footer{
     padding: 2em;
