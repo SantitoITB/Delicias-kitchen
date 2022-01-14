@@ -1,18 +1,20 @@
 @import "./style.css";
 
-header, ul {
+header,
+ul {
     text-align: center;
 }
 
-header, img {
+header,
+img {
     margin: 1rem;
 }
 
-a{
+a {
     text-transform: uppercase;
 }
 
-img{
+img {
     flex-wrap: wrap
 }
 
@@ -41,13 +43,13 @@ li a {
     text-decoration: none;
 }
 
-main::after{
+main::after {
     content: "";
     display: table;
     clear: both;
 }
 
-aside{
+aside {
     width: 25%;
     text-align: center;
 }
@@ -58,16 +60,21 @@ section {
 
 section::after {
     content: "";
-  display: table;
-  clear: both;
+    display: table;
+    clear: both;
 }
+
 
 section article {
     float: left;
     padding: 1rem;
     margin: 0.8em;
+    width: 20em;
+    height: 25em;
 }
-section article h6, section article div{
+
+section article h6,
+section article div {
     text-align: center;
 }
 
@@ -86,9 +93,11 @@ section article figure {
     justify-content: center;
     margin: auto;
     width: 100%;
+    display: flex;
 }
 
-aside, section {
+aside,
+section {
     float: left;
     padding: 1rem;
 }
@@ -113,13 +122,13 @@ aside article div span {
 }
 
 
-footer{
+footer {
     padding: 2em;
     text-align: center;
     color: var(--white);
     background-color: var(--black);
 }
 
-footer a{
+footer a {
     margin: 1em;
 }
