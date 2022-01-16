@@ -5,6 +5,10 @@ ul {
     text-align: center;
 }
 
+a {
+    text-transform: uppercase;
+}
+
 header,
 img {
     margin: 1rem;
@@ -108,4 +112,9 @@ section article img{
         width: 100%;
         border-style: none;
         vertical-align: middle
+}
+
+h5 a{
+    text-transform: none;
+    color: var(--black);
 }
