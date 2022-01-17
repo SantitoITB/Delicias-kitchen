@@ -1,0 +1,102 @@
+@import "./style.css";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+article,
+header,
+section,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    background: none screen;
+    background-image: url(../img/organic.jpg);
+    color: var(--black);
+    font-family: "Raleway", sans-serif;
+    font-size: 100%;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+
+section {
+    float: left;
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+article {
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    padding: 0 15px;
+    min-height: 1px;
+    position: relative;
+}
+
+form div {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form {
+    text-align: center;
+}
+
+form img {
+    background: var(--brown) 0.2;
+}
+
+input,
+textarea {
+    color: var(--black);
+    background: var(--white);
+    border: none;
+    padding: 15.5px;
+    width: 91.9%;
+    display: block;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    display: block;
+    border: none;
+    background: var(--black);
+    float: center;
+    color: var(--white);
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background: var(--black);
+
+}
